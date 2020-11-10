@@ -120,7 +120,7 @@
     switch(type){
             
         case videoType1x1:
-            rect = CGRectMake(0, 0, kScreenWith, kScreenHeight);
+            rect = CGRectMake(0, 0, kScreenWith, kScreenWith);
             break;
         case videoType4x3:
             rect = CGRectMake(0, 0, kScreenWith, kScreenWith*4/3);
@@ -129,7 +129,7 @@
             rect = CGRectMake(0, 0, kScreenWith, kScreenHeight);
             break;
         default:
-            rect = CGRectMake(0, 0, kScreenWith, kScreenHeight);
+            rect = CGRectMake(0, 0, kScreenWith, kScreenWith);
     }
     self.capturePreviewLayer.frame = rect;
     [self.superView.layer insertSublayer:self.capturePreviewLayer atIndex:0];

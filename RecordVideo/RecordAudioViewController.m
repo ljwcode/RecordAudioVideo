@@ -126,12 +126,9 @@
 -(NSURL *)audioURL{
     if(!_audioURL){
         //设置文件储存路径
-        NSArray *dirPaths = NSSearchPathForDirectoriesInDomains(
-                                                                NSDocumentDirectory, NSUserDomainMask, YES);
+        NSArray *dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask,YES);
         NSString *docsDir = [dirPaths objectAtIndex:0];
-        NSString *soundFilePath = [docsDir
-                                   stringByAppendingPathComponent:@"recordTest.caf"];
-        
+        NSString *soundFilePath = [docsDir stringByAppendingPathComponent:@"recordTest.caf"];
         NSURL *url = [NSURL fileURLWithPath:soundFilePath];
         _audioURL = url;
     }
