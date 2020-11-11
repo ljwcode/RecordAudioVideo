@@ -39,8 +39,7 @@
     return self;
 }
 
-- (void)BuildUIWithType:(RecordVideoViewType)type
-{
+- (void)BuildUIWithType:(RecordVideoViewType)type{
     
     self.fmodel = [[CameraStatusModel alloc] initWithFMVideoViewType:type superView:self];
     self.fmodel.delegate = self;

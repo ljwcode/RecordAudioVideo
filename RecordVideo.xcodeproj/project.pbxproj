@@ -21,6 +21,8 @@
 		63386990254FDD8E00806FDE /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 6338698B254FDD8E00806FDE /* UIColor+Hex.m */; };
 		63386991254FDD8E00806FDE /* XCFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6338698C254FDD8E00806FDE /* XCFileManager.m */; };
 		63386992254FDD8E00806FDE /* FMRecordProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6338698D254FDD8E00806FDE /* FMRecordProgressView.m */; };
+		63C5B1C7255B98D700283312 /* applelogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 63C5B1C6255B98D700283312 /* applelogo.jpg */; };
+		63C5B1CA255B997A00283312 /* applelogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 63C5B1C9255B997A00283312 /* applelogo.png */; };
 		63F2B1A125510268005063C6 /* ImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F2B1A025510268005063C6 /* ImagePickerViewController.m */; };
 		63F2B1A525513F07005063C6 /* RecordAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F2B1A425513F07005063C6 /* RecordAudioViewController.m */; };
 		98FC0C082CFE2D39D4DFE6EC /* Pods_RecordVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC849B5437301F649FE4C42 /* Pods_RecordVideo.framework */; };
@@ -55,6 +57,8 @@
 		6338698D254FDD8E00806FDE /* FMRecordProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRecordProgressView.m; sourceTree = "<group>"; };
 		6338698E254FDD8E00806FDE /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		6338698F254FDD8E00806FDE /* XCFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFileManager.h; sourceTree = "<group>"; };
+		63C5B1C6255B98D700283312 /* applelogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = applelogo.jpg; sourceTree = "<group>"; };
+		63C5B1C9255B997A00283312 /* applelogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = applelogo.png; sourceTree = "<group>"; };
 		63F2B19F25510268005063C6 /* ImagePickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImagePickerViewController.h; sourceTree = "<group>"; };
 		63F2B1A025510268005063C6 /* ImagePickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImagePickerViewController.m; sourceTree = "<group>"; };
 		63F2B1A325513F07005063C6 /* RecordAudioViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordAudioViewController.h; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 				63386961254FAE7900806FDE /* ViewController.m */,
 				63386963254FAE7900806FDE /* Main.storyboard */,
 				63386966254FAE7B00806FDE /* Assets.xcassets */,
+				63C5B1C9255B997A00283312 /* applelogo.png */,
+				63C5B1C6255B98D700283312 /* applelogo.jpg */,
 				63386968254FAE7B00806FDE /* LaunchScreen.storyboard */,
 				6338696B254FAE7B00806FDE /* Info.plist */,
 				6338696C254FAE7B00806FDE /* main.m */,
@@ -212,8 +218,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6338696A254FAE7B00806FDE /* LaunchScreen.storyboard in Resources */,
+				63C5B1CA255B997A00283312 /* applelogo.png in Resources */,
 				63386967254FAE7B00806FDE /* Assets.xcassets in Resources */,
 				63386965254FAE7900806FDE /* Main.storyboard in Resources */,
+				63C5B1C7255B98D700283312 /* applelogo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
