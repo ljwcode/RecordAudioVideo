@@ -21,6 +21,11 @@
 
 @implementation RecordAudioViewController
 
+-(void)viewDidLayoutSubviews{
+    UIBarButtonItem *leftBarItem = [[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(backHandle:)];
+    self.navigationItem.leftBarButtonItem = leftBarItem;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -133,6 +138,10 @@
         _audioURL = url;
     }
     return _audioURL;
+}
+
+-(void)backHandle:(id)sender{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*

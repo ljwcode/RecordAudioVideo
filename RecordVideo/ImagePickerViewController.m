@@ -176,24 +176,18 @@
     NSURL* videoUrl = [NSURL fileURLWithPath:myPathDocs];
     
     // 5 - 视频文件输出
-    AVAssetExportSession *exporter = [[AVAssetExportSession alloc] initWithAsset:mixComposition
-                                                                      presetName:AVAssetExportPresetHighestQuality];
+    AVAssetExportSession *exporter = [[AVAssetExportSession alloc] initWithAsset:mixComposition presetName:AVAssetExportPresetHighestQuality];
     exporter.outputURL = videoUrl;
     exporter.outputFileType = AVFileTypeMPEG4;
     exporter.shouldOptimizeForNetworkUse = YES;
     exporter.videoComposition = mainCompositionInst;
     [exporter exportAsynchronouslyWithCompletionHandler:^{
         dispatch_async(dispatch_get_main_queue(), ^{
-            
             if( exporter.status == AVAssetExportSessionStatusCompleted ){
-               
                 UISaveVideoAtPathToSavedPhotosAlbum(myPathDocs, nil, nil, nil);
-  
-            }else if( exporter.status == AVAssetExportSessionStatusFailed )
-            {
+            }else if( exporter.status == AVAssetExportSessionStatusFailed ){
                 NSLog(@"failed");
             }
-            
         });
     }];
 }
