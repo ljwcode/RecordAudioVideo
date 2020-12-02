@@ -33,6 +33,8 @@ typedef NS_ENUM(NSInteger,RecordVideoViewType){
 
 @interface AVAssetManager : NSObject
 
++(AVAssetManager *)shareInstance;
+
 @property(nonatomic,retain)__attribute__ ((NSObject)) CMFormatDescriptionRef outPutVideoFormatDescription;
 
 @property(nonatomic,retain)__attribute__ ((NSObject)) CMFormatDescriptionRef outPutAudioFormatDescription;
@@ -50,6 +52,8 @@ typedef NS_ENUM(NSInteger,RecordVideoViewType){
 - (void)appendSampleBuffer:(CMSampleBufferRef)sampleBuffer ofMediaType:(NSString *)mediaType;
 
 - (void)destroyWrit;
+
+- (void)addWaterPicWithVideoPath:(NSURL*)path;
 
 @end
 
